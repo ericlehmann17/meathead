@@ -1,0 +1,51 @@
+body.ridge{
+    background-color: papayawhip;
+    border-style: ridge;
+    border-color: brown;
+    border-width: 5mm;
+}
+hr{
+    border: none;
+    background: brown;
+    height: 10px;
+}
+h1{
+    font-family: 'Inconsolata', monospace;
+    color:rgb(109, 87, 14);
+    font-size: 120px;
+    text-shadow: 4px 4px 4px gray;
+    margin: 10px;
+}
+h2{
+    font-family: 'Inconsolata', monospace;
+    color:rgb(109, 87, 14);
+    font-size: 30px;
+    margin: 20px;
+}
+p{
+    color: rgb(109, 87, 14); 
+    font-family: 'Inconsolata', monospace;
+    font-size: x-large;
+}
+button.topribbon{
+    border-style: ridge;
+    border-color: rgb(212, 146, 102);
+    border-width: 1mm;
+    font-family: 'Inconsolata', monospace;
+    font-size: xx-large;
+    background-color: papayawhip;
+}
+#searchbar{
+    width: 90%;
+    padding: 13px;
+    border-radius: 4px;
+    border: 2px solid brown;
+    font-size: 15px;    
+}
+#searchresults{
+    color: rgb(109, 87, 14); 
+    font-family: 'Inconsolata', monospace;
+    font-size: x-large;
+    margin: 50px;
+}
+
