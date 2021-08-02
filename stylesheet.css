@@ -1,8 +1,5 @@
 body.ridge{
     background-color: papayawhip;
-    border-style: ridge;
-    border-color: brown;
-    border-width: 5mm;
 }
 hr{
     border: none;
@@ -15,17 +12,20 @@ h1{
     font-size: 120px;
     text-shadow: 4px 4px 4px gray;
     margin: 10px;
+    text-align: center;
 }
 h2{
     font-family: 'Inconsolata', monospace;
     color:rgb(109, 87, 14);
     font-size: 30px;
     margin: 20px;
+    text-align: center;
 }
 p{
     color: rgb(109, 87, 14); 
     font-family: 'Inconsolata', monospace;
     font-size: x-large;
+    text-align: center;
 }
 button.topribbon{
     border-style: ridge;
@@ -35,17 +35,36 @@ button.topribbon{
     font-size: xx-large;
     background-color: papayawhip;
 }
+#sbwrapper{
+    display: block;
+    text-align: center;
+}
 #searchbar{
     width: 90%;
     padding: 13px;
     border-radius: 4px;
     border: 2px solid brown;
-    font-size: 15px;    
+    font-size: 15px;   
+    text-align: center; 
+    
+
 }
 #searchresults{
-    color: rgb(109, 87, 14); 
+    color:rgb(61, 48, 4);
     font-family: 'Inconsolata', monospace;
     font-size: x-large;
+    margin: 50px;
+    text-align: center;
+}
+#searchreps{
+    color: rgb(61, 48, 4); 
+    font-family: 'Inconsolata', monospace;
+    font-size: x-large;
+    margin: 50px;
+    text-align: center;
+}
+
+p.about{
     margin: 50px;
 }
 

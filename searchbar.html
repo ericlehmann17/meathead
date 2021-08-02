@@ -14,44 +14,14 @@
     </head>
     <body class = "ridge">
         <button class = "topribbon"><a href = "index.html">Back</a></button>
-        <center><h1>SEARCH</h1> 
+        <h1>SEARCH</h1> 
+        <hr>
             <h2>Type in the name of an exercise you would like to learn more about. For example, if you want to learn more about the bench press, type in "bench press".</h2>
-    <input type = "text" id = "searchbar" placeholder = "Search for an exercise!">
-    <script>
-        var dict = {
-                "bench press" : "The quintessential chest exercise. Place your hands around shoulder width apart on the bar. Unrack the barbell by pushing it upward and slightly forward. Complete a rep by bringing the bar down to your chest, and pushing the bar back up until your arms are extended. Arch your back slightly for more power.",
-                "deadlift" : "The quintessential back exercise. Conventional: Place your feet hip width apart on the floor, toes parallel, facing forward. With the barbell at your feet, grab the bar with both hands around shoulder width apart. With your back straight, bring your butt down and pull the weight up. TIP: Try to feel this exercise in your hamstrings.",
-                "squat" : "The quintessential leg exercise. Place your legs around shoulder width apart. Unrack the barbell, placing the weight evenly on your back. Take a deep breath and, with your back straight, squat down until your knees are bent at a 90 degree angle. Then, stand back up straight, using your legs to drive the weight back up."
-            }
-
-        function element(id){
-            return document.getElementById(id);
-        }
-        
-        function searchscript(){
-            const keys = Object.keys(dict);
-            let search = element("searchbar").value; //string in the search bar
-            search = search.toLowerCase().trim();
-            for(let i = 0; i < keys.length; i++){
-                if(search === keys[i]){
-                    element("searchresults").innerHTML = dict[keys[i]];
-                    return;
-                }
-
-                if(i === keys.length - 1){
-                    element("searchresults").innerHTML = "There are no exercises of that name.";
-                    return;
-                }
-            }
-
-        }
-        //when enter is hit (13 keycode), run the search script
-        element("searchbar").addEventListener("keyup", function(event){
-            if(event.keyCode === 13){
-                searchscript();
-            }
-        });
-    </script>
-    <div id =  searchresults>Your results will be displayed here!</div>   
+        <div id = sbwrapper><input type = "text" id = "searchbar" placeholder = "Press enter to submit"></div>
+        <script src = "searchscript.js"></script>
+        <p><b>DESCRIPTION: </b></p>  
+        <div id = searchresults>Your results will be displayed here!</div>
+        <p><b>REP RANGE: </b></p>  
+        <div id = searchreps></div>
     </body>
 </html>
