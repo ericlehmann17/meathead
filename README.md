@@ -5,4 +5,4 @@ Currently, the search engine code is a simple JS script that requires the user t
 
 The "about" page gives a short desrciption, similar to this one, about who I am, why I am doing this project, and how it works. 
 
-# Open index.html in the project directory with a web browser to view the production build of the site.
+### Open index.html in the project directory with a web browser to view the production build of the site.
